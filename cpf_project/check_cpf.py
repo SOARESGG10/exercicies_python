@@ -14,7 +14,7 @@ def get_cpf(cpf):
     get_clean_cpf = clean_cpf(cpf)
 
     if check_sequence(get_clean_cpf):
-        return "CPF inválido. Você informou uma sequência."
+        return "Invalid CPF. You entered a sequence."
 
     get_part_cpf = get_clean_cpf[0:9]
     get_first_check_digit = check_digits(get_part_cpf)
