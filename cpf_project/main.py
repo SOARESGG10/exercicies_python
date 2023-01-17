@@ -7,4 +7,4 @@ with open("cpf_project/cpf.txt", "w+") as file:
     for amount in range(0, int(amount_user) + 1):
         output = get_cpf(generate_cpf())
         file.write(f"CPF: {output}\n")
-    print(f"Operação concluída com sucesso. Foram gerados {amount_user} CPS's")
+    print(f"Operation completed successfully. {amount_user} CPS's were generated.")
